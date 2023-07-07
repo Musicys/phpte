@@ -1,0 +1,133 @@
+#wrap{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    padding: 10px;
+    padding-bottom: 60px;
+    
+    box-shadow: 1px  1px 2px rgba(0, 0, 0, 0.5)
+}
+.logo{
+    width: 400px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#wrap p{
+    width: 550px;
+    display: flex;
+    margin-bottom: 50px;
+    background: #fff;
+    font-size: 24px;
+    border-radius: 30px;
+    line-height: 65px;
+    position: relative;
+}
+
+#wrap label{
+    width: 130px;
+    background: #ff8400;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+}
+#wrap input{
+    width: 100%;
+    bottom: none;
+    font-size: 20px;
+    color: #b2b2b2;
+    border: none;
+    padding-left: 10px;
+    border-radius: 0 30px 30px 0;
+
+}
+#wrap .tips{
+    position: absolute;
+    top:0;
+    right: 20px;
+    font-size: 16px;
+    color: red;
+}
+input::placeholder{
+    color: #ccc;
+    font-size: 16px;
+}
+#wrap #but{
+    width: 120px;
+    height: 65px;
+    margin: 0 10px;
+    background: #ff8400;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 24px;
+
+}
+#wrap #but2
+{
+    width: 120px;
+    height: 65px;
+    margin: 0 10px;
+    background: #ff8400;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 24px;
+    background: #cc2e2a;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: red;
+  overflow: hidden;
+    
+  
+}
+@media (max-width: 768px) {
+    body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 将其放到所有其他元素后面 */
+        background:  url('../img/back.webp') no-repeat center;
+        background-size: 100% 100%;
+    }
+  }
+  
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 将其放到所有其他元素后面 */
+    background:  url('../img/back.jpg') no-repeat center;
+    background-size: 100% 100%;
+    
+}
+input{
+    border: none;
+    outline: none;
+}

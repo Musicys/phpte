@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+   
+}
+body{
+  
+   position: relative;
+    width: 100vw;
+   overflow-x: hidden;
+    height: 100vh;
+    background: url('../imgs/背景.png') no-repeat;
+   background-size: 100% 100%;
+    background: #f5f5f5;
+
+    opacity: .95;
+}
+div{
+    user-select: none;
+}
+/* 头样式 */
+.boxtop{
+
+    width: 100%;
+  position: relative;
+    height: 80px;
+    background:#1f1f20;
+    border-bottom: .1px solid #373738;
+}
+
+.boxtop div{
+ 
+    position: relative;
+    margin:30px auto;
+  color: #d9d9d9;
+  float: left;
+  background:#1f1f20;
+  margin-left: 35px;
+ /* align-content: center; */
+}
+
+.boxtop div:hover strong{
+background: #3e3f3f;
+
+}
+.rse{
+    background: #3e3f3f;  
+}
+
+.tou{
+    background:#1f1f20;
+    color: aqua;
+    margin:30px auto;
+    float: left;
+
+}
+
+
+strong{
+    
+    background:#1f1f20;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 50px;
+}
+.boxtop>input[type="text"]{
+    background: #202121;
+    margin-top:32px;
+    margin-left: 50px;
+    color: #fff;
+    width: 100px;
+    transition: width 1s;
+    float: left;
+    border: .1 solid #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 20px;
+    font-size: 10px;
+  
+}
+.boxtop>input[type="text"]:focus{
+    position: relative;
+    width: 200px;
+
+    border:none;
+}
+.sy::after{
+ 
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url("../imgs/首页.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    
+}
+.fl::after{
+ 
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/分类.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+}
+.bq::after{
+ 
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/标签.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.da::after{
+ 
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/档案.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.gy::after,
+.js::after,
+.gr::after,
+.xx::after{
+ 
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/关于.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.user{
+    /* padding-left: 0px; */
+    margin-right: 100px;
+}
+
+
+.chaz{
+    float: left;
+    margin:35px auto;
+    width: 25px;
+    height: 25px;
+    background: url('../imgs/查找.png') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 10px;
+}
+
+.yhtx{
+    width: 40px;
+    height: 40px;
+    background: url('../imgs/头像.webp') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    float: right;
+    margin: 20px auto;
+}
+.yhtx:hover{
+    width: 50px;
+    height: 50px;
+   
+}
+
+/* 尾部导航条 */
+.bodybot{
+    text-align: center;
+    width: 100%;
+     position: absolute;
+     bottom: 0;
+    height: 80px;
+    background:#1f1f20;
+    border-top: .1px solid #373738;
+}
+.bodybot>span:nth-child(1){
+    line-height: 55px;
+}
+.bodybot>span{
+    font: 15px;
+    background: none;
+  line-height: 25px;
+    color: #f5f5f5;
+}
+
+/* 轮播图 */
+
+.a{
+   
+    top:160px;
+    width: 100%;
+ 
+    position: relative;
+    perspective: 1600px;
+   
+    display: flex;
+    justify-content: center;
+    background: none;
+    align-items: center;
+    
+}
+.b{
+
+   
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation:  a 8s infinite cubic-bezier(.7,0,.17,1);
+  background: none;
+}
+.c{
+   
+  
+    background-image: url("../imgs/1.png");
+    transform:rotateY(0deg)  translateZ(300px);
+
+}
+.d{
+ 
+    background-image: url("../imgs/2.png");
+    transform:rotateY(72deg)  translateZ(300px);
+
+}
+.e{
+  
+    
+  
+    background-image: url("../imgs/3.png");
+    transform:rotateY(144deg)  translateZ(300px);
+    
+}
+.f{
+  
+  background-image: url("../imgs/4.png");
+  transform:rotateY(216deg)  translateZ(300px);
+  
+}
+.g{
+  
+  background-image: url("../imgs/5.png");
+  transform:rotateY(288deg)  translateZ(300px);
+  
+}
+.b div{
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    border-radius: 15px;
+    position: absolute;
+    background-size: cover;
+    opacity: .9;
+    width: 300px;
+    height:150px;
+   
+}
+@keyframes a{
+  0%{
+    transform: translateZ(100px) rotateY(-0deg);
+  }
+  20%{
+    transform: translateZ(100px) rotateY(-72deg);
+  }
+  40%{
+    transform: translateZ(100px) rotateY(-144deg);
+  }
+  60%{
+    transform: translateZ(100px) rotateY(-216deg);
+  }
+  80%{
+    transform: translateZ(100px) rotateY(-288deg);
+  }
+  100%{
+    transform: translateZ(100px) rotateY(-360deg);
+  }
+}
+
+/*  */
+form{
+    
+    height: 100%;
+    width: 100%;
+    background: none;
+}
+.cz{
+    opacity: 0;
+}
+.box
+{
+    
+    margin:20px auto;
+    width: 1600px;
+    height: 700px;
+    padding: 20px;
+
+    background: rgba(0,0,0,.2);
+}
+.nr{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 230px;
+    background: rgba(255,225,255,.8);
+    box-shadow: 1px 1px .5px 1px rgba(0,0,0,.5);
+    padding-left: 80px;
+    padding-top: 20px;
+    text-align: justify;
+    padding-right: 10px;
+    
+
+
+}
+.l::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    top: 30px;
+
+    position: absolute;
+    right: -250px;
+    background: url('../imgs/头像.webp') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.ssnr>span{
+    display: block;
+  
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 3px;
+ 
+}
+.ssnr{
+   
+}
+.ssnr>span:hover{
+    background: linear-gradient(to left,#487eb0,#00a8ff)
+}
+.nrzs{
+    background: rgba(255,225,255,.8);
+    margin-top: 30px;
+    height:400px;
+    width: 90%;
+    float: left;
+
+    box-shadow: -1px  .5px 1px rgba(0,0,0,.5);
+    overflow-x: auto;
+    text-align: justify;
+   padding: 10px;
+   padding-right: 30px;
+   -webkit-user-select: auto;
+   -moz-user-select: auto;
+   -ms-user-select: auto;
+   user-select: auto;
+}
